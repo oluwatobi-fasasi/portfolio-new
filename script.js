@@ -133,7 +133,7 @@ const projects = [
 
 const works = document.querySelector('.works');
 projects.forEach((project, index) => {
-  const grid = document.querySelector(`.grid${index+1}`);
+  const grid = document.querySelector(`.grid${index + 1}`);
   const content = `<img
     src="${project.image}"
     alt="${project.alt}"
@@ -155,10 +155,8 @@ projects.forEach((project, index) => {
   works.appendChild(grid);
 });
 
-
 /* eslint-disable no-unused-vars */
 function shoW(id) {
-/* eslint-disable no-plusplus */
   const popUpSection = document.querySelector('.pop-up-section');
   popUpSection.style.display = 'block';
   const bodyCont = `<div class="pop-up-container">
