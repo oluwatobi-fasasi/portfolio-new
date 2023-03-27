@@ -156,8 +156,9 @@ projects.forEach((project, index) => {
 });
 
 
-
+/* eslint-disable no-unused-vars */
 function shoW(id) {
+/* eslint-disable no-plusplus */
   const popUpSection = document.querySelector('.pop-up-section');
   popUpSection.style.display = 'block';
   const bodyCont = `<div class="pop-up-container">
