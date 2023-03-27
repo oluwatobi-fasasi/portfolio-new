@@ -132,11 +132,8 @@ const projects = [
 ];
 
 const works = document.querySelector('.works');
-
 projects.forEach((project, index) => {
-  const div = document.createElement('div');
-  div.classList.add(`grid${index + 1}`);
-
+  const grid = document.querySelector(`.grid${index+1}`);
   const content = `<img
     src="${project.image}"
     alt="${project.alt}"
@@ -154,9 +151,11 @@ projects.forEach((project, index) => {
     /></a>
   </div>`;
 
-  div.innerHTML = content;
-  works.appendChild(div);
+  grid.innerHTML = content;
+  works.appendChild(grid);
 });
+
+
 
 function shoW(id) {
   const popUpSection = document.querySelector('.pop-up-section');
